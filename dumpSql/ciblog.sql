@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Хост: localhost
--- Время создания: Май 09 2018 г., 13:28
+-- Время создания: Май 09 2018 г., 18:17
 -- Версия сервера: 5.7.22-0ubuntu0.16.04.1
 -- Версия PHP: 7.0.28-0ubuntu0.16.04.1
 
@@ -40,7 +40,11 @@ CREATE TABLE `posts` (
 
 INSERT INTO `posts` (`id`, `title`, `slug`, `body`, `created_at`) VALUES
 (1, 'Post one', 'post-one', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', '2018-05-09 09:37:02'),
-(2, 'Post Two', 'post-two', '"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"', '2018-05-09 09:37:02');
+(2, 'Post Two', 'Post-Two', '123', '2018-05-09 09:37:02'),
+(4, 'Post four', 'Post-four', '<p>This is <strong>new post </strong>using the <em>ckeditor.</em></p>\r\n\r\n<h1><em>This is a heading</em></h1>\r\n', '2018-05-09 14:13:31'),
+(5, 'Post Two', 'Post-Two', '<p>123</p>\r\n', '2018-05-09 15:01:18'),
+(6, '12', '12', '<p>12</p>\r\n', '2018-05-09 15:01:28'),
+(7, '123', '123', '<p>321</p>\r\n', '2018-05-09 15:01:49');
 
 --
 -- Индексы сохранённых таблиц
@@ -60,7 +64,7 @@ ALTER TABLE `posts`
 -- AUTO_INCREMENT для таблицы `posts`
 --
 ALTER TABLE `posts`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
