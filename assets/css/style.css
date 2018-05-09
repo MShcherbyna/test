@@ -5,3 +5,9 @@
     display: block;
 
 }
+.btn-primary{
+    float:left;
+}
+.btn-danger {
+    margin-left:17px;
+}
